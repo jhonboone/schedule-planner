@@ -4,16 +4,12 @@ import com.tecboone.schedule_planner.exception.SchedulingAlreadyExistsException;
 import com.tecboone.schedule_planner.exception.SchedulingNotFoundException;
 import com.tecboone.schedule_planner.infrastructure.entity.Scheduling;
 import com.tecboone.schedule_planner.infrastructure.repository.SchedulingRepository;
-import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
